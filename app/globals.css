@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Standalone semantic theme. Replace these values only when final Ziarra brand tokens are approved. */
+:root {
+  --brand-primary: #ffc800;
+  --brand-primary-dark: #e0ae00;
+  --brand-accent: #7c8c57;
+  --brand-background: #141009;
+  --brand-surface: #1c1710;
+  --brand-text: #f5efe2;
+  --brand-muted: #b7a98e;
+  --brand-border: rgba(244,238,225,.12);
+}
+
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body { margin: 0; min-width: 320px; overflow-x: hidden; background: #141009; color: #f5efe2; }
+* { box-sizing: border-box; }
+a { text-decoration: none; }
+::selection { background: #e3a530; color: #141009; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+}
+
+/* Package detail treatment based on the live Ziarra booking display. */
+.ziarra-package { background: #fff !important; color: #25262b !important; font-family: Arial, sans-serif; }
+.ziarra-package main,
+.ziarra-package .bg-ink,
+.ziarra-package .bg-surface { background-color: #fff !important; }
+.ziarra-package .bg-surface2 { background-color: #f7f7f8 !important; }
+.ziarra-package .text-cream { color: #25262b !important; }
+.ziarra-package .text-sand { color: #62646a !important; }
+.ziarra-package .text-sandDim { color: #8b8d93 !important; }
+.ziarra-package .text-gold { color: #b88700 !important; }
+.ziarra-package .border-line,
+.ziarra-package .border-lineStrong { border-color: #e5e7eb !important; }
+.ziarra-package .bg-gold { background-color: #ffc800 !important; }
+.ziarra-package .text-ink { color: #25262b !important; }
+.ziarra-package main table th { font-weight: 600; }
+.ziarra-package main section { border-color: #e5e7eb; }
+.ziarra-package main aside { border-color: #e5e7eb !important; background: #fff !important; box-shadow: 0 10px 25px -5px rgb(37 38 43 / .12) !important; }
+.ziarra-package main input { border-color: #d1d5db !important; background: #fff !important; color: #25262b !important; }
+.ziarra-package header { border-color: #e5e7eb !important; background: rgb(255 255 255 / .96) !important; color: #25262b !important; }
+.ziarra-package footer { border-color: #e5e7eb !important; background: #f7f7f8 !important; color: #25262b !important; }

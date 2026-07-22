@@ -1,0 +1,3 @@
+import type {Review} from "@/types/destination";
+export default function ReviewCard({review}:{review:Review}){return <article className="rounded-2xl border border-line bg-surface p-5"><div className="flex justify-between"><div><h3 className="font-semibold">{review.name}</h3><p className="text-xs text-sand">{review.country}</p></div><span aria-label={`${review.rating} out of 5 stars`} className="text-gold">★ {review.rating}</span></div><p className="mt-4 text-sm leading-6 text-sand">{review.comment}</p><p className="mt-3 font-mono text-[10px] uppercase text-sandDim">Demo review · {review.date}</p></article>}
+

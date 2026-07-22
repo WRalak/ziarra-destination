@@ -1,0 +1,144 @@
+
+> ziarra-destinations-redesign@0.1.0 dev
+> next dev --port 3100
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3100
+
+ ✓ Starting...
+ ✓ Ready in 4.7s
+ ○ Compiling / ...
+ ✓ Compiled / in 3.6s (460 modules)
+ GET / 307 in 3833ms
+ GET / 307 in 32ms
+ GET / 307 in 143ms
+ GET / 307 in 96ms
+ GET / 307 in 160ms
+ GET / 307 in 86ms
+ GET / 307 in 84ms
+ GET / 307 in 97ms
+ GET / 307 in 65ms
+ GET / 307 in 85ms
+ GET / 307 in 86ms
+ GET / 307 in 100ms
+ GET / 307 in 100ms
+ GET / 307 in 69ms
+ GET / 307 in 100ms
+ GET / 307 in 84ms
+ GET / 307 in 101ms
+ GET / 307 in 84ms
+ GET / 307 in 71ms
+ GET / 307 in 103ms
+ GET / 307 in 69ms
+ GET / 307 in 85ms
+ GET / 307 in 90ms
+ GET / 307 in 83ms
+ GET / 307 in 53ms
+ GET / 307 in 103ms
+ GET / 307 in 89ms
+ GET / 307 in 85ms
+ GET / 307 in 68ms
+ ○ Compiling /destinations ...
+ ✓ Compiled /destinations in 916ms (559 modules)
+ GET /destinations 200 in 1154ms
+ ✓ Compiled in 272ms (274 modules)
+ ✓ Compiled in 444ms (274 modules)
+ ✓ Compiled in 259ms (274 modules)
+ ✓ Compiled in 232ms (274 modules)
+ ✓ Compiled in 280ms (274 modules)
+ ✓ Compiled in 254ms (274 modules)
+ ✓ Compiled in 278ms (274 modules)
+ ✓ Compiled in 300ms (274 modules)
+ ✓ Compiled in 323ms (274 modules)
+ ✓ Compiled in 226ms (274 modules)
+ ✓ Compiled in 171ms (274 modules)
+ ✓ Compiled in 213ms (274 modules)
+ ✓ Compiled in 243ms (274 modules)
+ ✓ Compiled in 219ms (274 modules)
+ ✓ Compiled in 199ms (274 modules)
+ ✓ Compiled in 773ms (259 modules)
+ ✓ Compiled in 598ms (259 modules)
+ ✓ Compiled in 690ms (233 modules)
+ ✓ Compiled in 564ms (219 modules)
+ ✓ Compiled in 274ms (233 modules)
+ ✓ Compiled in 216ms (233 modules)
+ ✓ Compiled in 251ms (233 modules)
+ ✓ Compiled in 268ms (233 modules)
+ ✓ Compiled in 260ms (233 modules)
+ ✓ Compiled in 446ms (233 modules)
+ ✓ Compiled in 772ms (233 modules)
+ ✓ Compiled in 337ms (233 modules)
+ ✓ Compiled in 356ms (233 modules)
+ ✓ Compiled in 337ms (233 modules)
+ ✓ Compiled in 204ms (233 modules)
+ ✓ Compiled in 245ms (233 modules)
+ ✓ Compiled in 250ms (233 modules)
+ ✓ Compiled in 301ms (233 modules)
+ ✓ Compiled in 271ms (233 modules)
+ ✓ Compiled in 191ms (233 modules)
+ ✓ Compiled in 174ms (233 modules)
+ ✓ Compiled in 187ms (233 modules)
+ ✓ Compiled in 160ms (233 modules)
+ ✓ Compiled in 222ms (233 modules)
+ ✓ Compiled in 230ms (233 modules)
+ ✓ Compiled in 330ms (233 modules)
+ ✓ Compiled in 295ms (233 modules)
+ ✓ Compiled in 253ms (233 modules)
+ ✓ Compiled in 220ms (233 modules)
+ ✓ Compiled in 259ms (233 modules)
+ ✓ Compiled in 197ms (233 modules)
+ ✓ Compiled in 245ms (233 modules)
+ ✓ Compiled in 380ms (233 modules)
+ ✓ Compiled in 411ms (219 modules)
+ ✓ Compiled in 184ms (233 modules)
+ ✓ Compiled in 105ms (219 modules)
+ ✓ Compiled in 201ms (233 modules)
+ ✓ Compiled in 263ms (219 modules)
+ ✓ Compiled in 165ms (233 modules)
+ ✓ Compiled in 258ms (233 modules)
+ ✓ Compiled in 377ms (233 modules)
+ ✓ Compiled in 431ms (233 modules)
+ ✓ Compiled in 534ms (233 modules)
+ ✓ Compiled in 429ms (219 modules)
+ ✓ Compiled in 412ms (219 modules)
+ ✓ Compiled in 624ms (219 modules)
+ ✓ Compiled in 560ms (233 modules)
+ ✓ Compiled in 258ms (233 modules)
+ ✓ Compiled in 379ms (233 modules)
+ ✓ Compiled in 323ms (233 modules)
+ ✓ Compiled in 258ms (233 modules)
+ ✓ Compiled in 239ms (233 modules)
+ ✓ Compiled in 167ms (233 modules)
+ ✓ Compiled in 319ms (233 modules)
+ ✓ Compiled in 657ms (233 modules)
+ ✓ Compiled in 284ms (233 modules)
+ ✓ Compiled in 380ms (233 modules)
+ ✓ Compiled in 261ms (233 modules)
+ ✓ Compiled in 151ms (233 modules)
+ ✓ Compiled in 283ms (233 modules)
+ ✓ Compiled in 224ms (233 modules)
+ ✓ Compiled in 463ms (219 modules)
+ ✓ Compiled in 311ms (233 modules)
+ ✓ Compiled in 255ms (233 modules)
+ ✓ Compiled in 185ms (233 modules)
+ ✓ Compiled in 294ms (233 modules)
+ ✓ Compiled in 253ms (233 modules)
+ ✓ Compiled in 188ms (233 modules)
+ ✓ Compiled in 260ms (233 modules)
+ ✓ Compiled in 264ms (233 modules)
+ ✓ Compiled in 476ms (233 modules)
+ ✓ Compiled in 337ms (233 modules)
+ ✓ Compiled in 237ms (233 modules)
+ ✓ Compiled in 217ms (233 modules)
+ ✓ Compiled in 264ms (233 modules)
+ ✓ Compiled in 176ms (233 modules)
+ ✓ Compiled in 616ms (219 modules)
+ ✓ Compiled in 266ms (233 modules)
+ ✓ Compiled in 230ms (233 modules)
+ ✓ Compiled in 385ms (219 modules)
+ ✓ Compiled in 280ms (233 modules)
+ ✓ Compiled in 337ms (233 modules)
+ ✓ Compiled in 432ms (219 modules)
+ ✓ Compiled in 215ms (233 modules)
+ ✓ Compiled in 198ms (233 modules)
+ ✓ Compiled in 415ms (219 modules)

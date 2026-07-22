@@ -1,0 +1,43 @@
+
+> ziarra-destinations-redesign@0.1.0 dev
+> next dev --port 3200
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3200
+
+ ✓ Starting...
+ ✓ Ready in 6.5s
+ ○ Compiling / ...
+ ✓ Compiled / in 10.6s (579 modules)
+ GET / 200 in 167ms
+ ○ Compiling /search ...
+ ✓ Compiled /search in 7.1s (586 modules)
+ GET /search 200 in 7970ms
+ ○ Compiling /destinations ...
+ ✓ Compiled /destinations in 823ms (586 modules)
+ GET /destinations 200 in 1518ms
+ ○ Compiling /destinations/[country] ...
+ ✓ Compiled /destinations/[country] in 1111ms (597 modules)
+ GET /destinations/kenya 200 in 3141ms
+ ○ Compiling /activities/[slug] ...
+ ✓ Compiled /activities/[slug] in 832ms (606 modules)
+ GET /activities/nairobi-national-park-safari 200 in 1973ms
+ ✓ Compiled /day-trips/[slug] in 434ms (608 modules)
+ GET /day-trips/nairobi-to-lake-naivasha 200 in 2034ms
+ ○ Compiling /packages/[slug] ...
+ ✓ Compiled /packages/[slug] in 548ms (610 modules)
+ GET /packages/kenya-safari-and-beach-escape 200 in 1860ms
+ ○ Compiling /book/[category]/[slug] ...
+ ✓ Compiled /book/[category]/[slug] in 646ms (621 modules)
+ GET /book/activity/nairobi-national-park-safari 200 in 2072ms
+ GET /book/day-trip/nairobi-to-lake-naivasha 200 in 83ms
+ GET /book/package/kenya-safari-and-beach-escape 200 in 40ms
+ ○ Compiling /bookings ...
+ ✓ Compiled /bookings in 709ms (628 modules)
+ GET /bookings 200 in 805ms
+ ○ Compiling /saved ...
+ ✓ Compiled /saved in 759ms (635 modules)
+ GET /saved 200 in 958ms
+ ○ Compiling /bookings/[reference] ...
+ ✓ Compiled /bookings/[reference] in 864ms (642 modules)
+ GET /bookings/ZRA-DEMO-TEST 200 in 2034ms
