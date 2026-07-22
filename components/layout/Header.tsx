@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-ink/95 backdrop-blur-xl">
       <div className="mx-auto flex min-h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-2 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-gold">
+        <Link href="/destinations" className="flex items-center gap-2 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-gold">
           <span className="grid h-9 w-9 place-items-center rounded-xl bg-gold font-bold text-ink">Z</span>
           <span className="font-display text-xl font-semibold">Ziarra</span>
         </Link>

@@ -22,9 +22,7 @@ export default function DestinationSearch({ destinations }: { destinations: read
         </div>
       </div>
       <h2 id="destination-results" className="sr-only">Destination results</h2>
-      <p className="mb-5 font-mono text-xs uppercase tracking-widest text-sandDim" aria-live="polite">{filtered.length} {filtered.length === 1 ? "destination" : "destinations"}</p>
       {filtered.length ? <DestinationGrid destinations={filtered} /> : <div role="status" className="rounded-2xl border border-dashed border-lineStrong bg-surface p-10 text-center text-sand">No destinations found for “{trimmedQuery}”.</div>}
     </section>
   );
 }
-

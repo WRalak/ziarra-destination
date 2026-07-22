@@ -12,7 +12,7 @@ export default function Footer() {
           <div>
             <h2 className="text-sm font-semibold text-cream">Navigate</h2>
             <div className="mt-3 flex flex-col gap-2 text-sm text-sand">
-              <Link href="/">Home</Link><Link href="/destinations">Destinations</Link><Link href="/#about">About</Link>
+              <Link href="/destinations">Destinations</Link>
             </div>
           </div>
           <div>
