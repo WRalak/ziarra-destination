@@ -11,10 +11,10 @@ export default function DestinationCard({ destination }: { destination: Destinat
           <Image src={`/images/flags/${destination.code.toLowerCase()}.png`} alt="" width={34} height={23} className="h-[23px] w-[34px] object-cover" />
         </span>
       </div>
-      <div className="flex flex-1 flex-col p-4">
-        <h2 className="font-display text-xl font-semibold">{destination.name}</h2>
-        <p className="mt-1.5 text-xs leading-5 text-sand">{destination.tagline}</p>
-        <span className="mt-auto pt-4 text-xs font-semibold text-gold">Explore <span aria-hidden="true" className="inline-block transition-transform group-hover:translate-x-1">→</span></span>
+      <div className="flex flex-1 flex-col p-2.5 min-[400px]:p-3 sm:p-4">
+        <h2 className="break-words font-display text-base font-semibold min-[400px]:text-lg sm:text-xl">{destination.name}</h2>
+        <p className="mt-1.5 text-[10px] leading-4 text-sand min-[400px]:text-xs min-[400px]:leading-5">{destination.tagline}</p>
+        <span className="mt-auto pt-3 text-[11px] font-semibold text-gold sm:pt-4 sm:text-xs">Explore <span aria-hidden="true" className="inline-block transition-transform group-hover:translate-x-1">→</span></span>
       </div>
     </Link>
   );

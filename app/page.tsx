@@ -55,7 +55,7 @@ export default function HomePage() {
 
         <div className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
           <p className="mb-2 rounded-xl border border-gold/20 bg-gold/10 p-4 text-sm text-gold">Preview data — live availability and pricing will be connected later.</p>
-          {featuredSections.map((section) => <section key={section.title} className="pt-14"><h2 className="mb-7 font-display text-2xl font-semibold sm:text-3xl">{section.title}</h2><div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{section.items.map(item=><OfferingCard key={item.id} offering={item}/>)}</div></section>)}
+          {featuredSections.map((section) => <section key={section.title} className="pt-14"><h2 className="mb-7 font-display text-2xl font-semibold sm:text-3xl">{section.title}</h2><div className="grid grid-cols-2 gap-2 min-[400px]:gap-3 sm:gap-5 lg:grid-cols-3">{section.items.map(item=><OfferingCard key={item.id} offering={item}/>)}</div></section>)}
         </div>
 
         <section id="about" className="border-y border-line bg-surface">
