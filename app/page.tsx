@@ -34,7 +34,7 @@ export default function HomePage() {
           <div aria-hidden="true" className="absolute inset-0 -z-10 opacity-30 [background-image:linear-gradient(rgba(244,238,225,.06)_1px,transparent_1px),linear-gradient(90deg,rgba(244,238,225,.06)_1px,transparent_1px)] [background-size:48px_48px]" />
           <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8 lg:py-36">
             <p className="font-mono text-xs uppercase tracking-[0.22em] text-gold">Twelve destinations · one continent</p>
-            <h1 className="mt-5 max-w-4xl font-display text-5xl font-semibold leading-[1.05] sm:text-6xl lg:text-7xl">Discover your next unforgettable experience</h1>
+            <h1 className="mt-5 max-w-4xl font-display text-4xl font-semibold leading-[1.08] min-[400px]:text-5xl sm:text-6xl lg:text-7xl">Discover your next unforgettable experience</h1>
             <p className="mt-6 max-w-2xl text-base leading-7 text-sand sm:text-lg">Discover unforgettable activities, day trips and travel packages across twelve carefully selected African destinations.</p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Link href="/destinations" className="rounded-xl bg-gold px-6 py-3.5 text-center text-sm font-semibold text-ink transition hover:bg-[#f0b545] focus:outline-none focus-visible:ring-2 focus-visible:ring-cream focus-visible:ring-offset-2 focus-visible:ring-offset-ink">Explore destinations</Link>
@@ -55,7 +55,7 @@ export default function HomePage() {
 
         <div className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
           <p className="mb-2 rounded-xl border border-gold/20 bg-gold/10 p-4 text-sm text-gold">Preview data — live availability and pricing will be connected later.</p>
-          {featuredSections.map((section) => <section key={section.title} className="pt-14"><h2 className="mb-7 font-display text-3xl font-semibold">{section.title}</h2><div className="grid gap-5 lg:grid-cols-3">{section.items.map(item=><OfferingCard key={item.id} offering={item}/>)}</div></section>)}
+          {featuredSections.map((section) => <section key={section.title} className="pt-14"><h2 className="mb-7 font-display text-2xl font-semibold sm:text-3xl">{section.title}</h2><div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{section.items.map(item=><OfferingCard key={item.id} offering={item}/>)}</div></section>)}
         </div>
 
         <section id="about" className="border-y border-line bg-surface">

@@ -546,6 +546,9 @@ video {
 .left-0 {
   left: 0px;
 }
+.left-2\.5 {
+  left: 0.625rem;
+}
 .left-3 {
   left: 0.75rem;
 }
@@ -771,11 +774,14 @@ video {
 .h-px {
   height: 1px;
 }
+.min-h-12 {
+  min-height: 3rem;
+}
 .min-h-16 {
   min-height: 4rem;
 }
-.min-h-\[520px\] {
-  min-height: 520px;
+.min-h-\[440px\] {
+  min-height: 440px;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -867,6 +873,9 @@ video {
 }
 .flex-none {
   flex: none;
+}
+.shrink-0 {
+  flex-shrink: 0;
 }
 @keyframes pulse {
 
@@ -992,6 +1001,9 @@ video {
 }
 .whitespace-nowrap {
   white-space: nowrap;
+}
+.break-words {
+  overflow-wrap: break-word;
 }
 .rounded {
   border-radius: 0.25rem;
@@ -1235,10 +1247,6 @@ video {
 .p-8 {
   padding: 2rem;
 }
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -1330,8 +1338,8 @@ video {
 .pb-1 {
   padding-bottom: 0.25rem;
 }
-.pb-14 {
-  padding-bottom: 3.5rem;
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 .pb-16 {
   padding-bottom: 4rem;
@@ -1394,10 +1402,6 @@ video {
   font-size: 3rem;
   line-height: 1;
 }
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
 .text-\[10\.5px\] {
   font-size: 10.5px;
 }
@@ -1454,8 +1458,8 @@ video {
 .leading-7 {
   line-height: 1.75rem;
 }
-.leading-\[1\.05\] {
-  line-height: 1.05;
+.leading-\[1\.08\] {
+  line-height: 1.08;
 }
 .leading-relaxed {
   line-height: 1.625;
@@ -1605,6 +1609,9 @@ video {
 .\[background-size\:48px_48px\] {
   background-size: 48px 48px;
 }
+.\[scrollbar-width\:none\] {
+  scrollbar-width: none;
+}
 
 /* Standalone semantic theme. Replace these values only when final Ziarra brand tokens are approved. */
 :root {
@@ -1621,12 +1628,19 @@ video {
 html { scroll-behavior: smooth; overflow-x: hidden; }
 body { margin: 0; min-width: 320px; overflow-x: hidden; background: #141009; color: #f5efe2; }
 * { box-sizing: border-box; }
+img, video { max-width: 100%; height: auto; }
+input, select, textarea, button { max-width: 100%; }
+p, h1, h2, h3, dd { overflow-wrap: anywhere; }
 a { text-decoration: none; }
 ::-moz-selection { background: #e3a530; color: #141009; }
 ::selection { background: #e3a530; color: #141009; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+}
+
+@media (max-width: 374px) {
+  body { min-width: 0; }
 }
 
 /* Package detail treatment based on the live Ziarra booking display. */
@@ -1746,6 +1760,22 @@ a { text-decoration: none; }
   --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+@media (min-width: 400px) {
+
+  .min-\[400px\]\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .min-\[400px\]\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .min-\[400px\]\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
 @media (min-width: 640px) {
 
   .sm\:col-span-2 {
@@ -1756,12 +1786,16 @@ a { text-decoration: none; }
     grid-row: span 2 / span 2;
   }
 
+  .sm\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
   .sm\:block {
     display: block;
   }
 
-  .sm\:flex {
-    display: flex;
+  .sm\:min-h-\[520px\] {
+    min-height: 520px;
   }
 
   .sm\:grid-cols-2 {
@@ -1788,6 +1822,14 @@ a { text-decoration: none; }
     align-items: center;
   }
 
+  .sm\:gap-7 {
+    gap: 1.75rem;
+  }
+
+  .sm\:border-b-0 {
+    border-bottom-width: 0px;
+  }
+
   .sm\:p-10 {
     padding: 2.5rem;
   }
@@ -1799,6 +1841,11 @@ a { text-decoration: none; }
   .sm\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .sm\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .sm\:py-16 {
@@ -1814,6 +1861,15 @@ a { text-decoration: none; }
   .sm\:py-28 {
     padding-top: 7rem;
     padding-bottom: 7rem;
+  }
+
+  .sm\:pb-14 {
+    padding-bottom: 3.5rem;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .sm\:text-4xl {
@@ -1840,11 +1896,15 @@ a { text-decoration: none; }
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+
+  .sm\:leading-7 {
+    line-height: 1.75rem;
+  }
 }
 @media (min-width: 768px) {
 
-  .md\:flex {
-    display: flex;
+  .md\:block {
+    display: block;
   }
 
   .md\:hidden {
@@ -1859,24 +1919,12 @@ a { text-decoration: none; }
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-\[1\.2fr_1\.2fr_1fr_\.7fr_auto\] {
-    grid-template-columns: 1.2fr 1.2fr 1fr .7fr auto;
-  }
-
   .md\:grid-cols-\[1\.4fr_1fr_1fr\] {
     grid-template-columns: 1.4fr 1fr 1fr;
   }
 
   .md\:justify-self-end {
     justify-self: end;
-  }
-
-  .md\:border-b-0 {
-    border-bottom-width: 0px;
-  }
-
-  .md\:border-r {
-    border-right-width: 1px;
   }
 }
 @media (min-width: 1024px) {
@@ -1887,6 +1935,10 @@ a { text-decoration: none; }
 
   .lg\:top-24 {
     top: 6rem;
+  }
+
+  .lg\:col-span-1 {
+    grid-column: span 1 / span 1;
   }
 
   .lg\:col-span-2 {
@@ -1913,6 +1965,10 @@ a { text-decoration: none; }
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-\[1\.2fr_1\.2fr_1fr_\.7fr_auto\] {
+    grid-template-columns: 1.2fr 1.2fr 1fr .7fr auto;
+  }
+
   .lg\:grid-cols-\[1fr_320px\] {
     grid-template-columns: 1fr 320px;
   }
@@ -1923,6 +1979,14 @@ a { text-decoration: none; }
 
   .lg\:grid-cols-\[minmax\(0\2c 1fr\)_360px\] {
     grid-template-columns: minmax(0,1fr) 360px;
+  }
+
+  .lg\:border-b-0 {
+    border-bottom-width: 0px;
+  }
+
+  .lg\:border-r {
+    border-right-width: 1px;
   }
 
   .lg\:px-8 {
@@ -1950,10 +2014,6 @@ a { text-decoration: none; }
   }
 }
 @media (min-width: 1280px) {
-
-  .xl\:flex {
-    display: flex;
-  }
 
   .xl\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));

@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="font-display text-xl font-semibold">Ziarra</div>
           <p className="mt-3 max-w-sm text-sm leading-6 text-sand">Explore activities, day trips and packages across a carefully selected group of African destinations.</p>
         </div>
-        <div className="grid grid-cols-2 gap-8 md:justify-self-end">
+        <div className="grid gap-8 min-[400px]:grid-cols-2 md:justify-self-end">
           <div>
             <h2 className="text-sm font-semibold text-cream">Navigate</h2>
             <div className="mt-3 flex flex-col gap-2 text-sm text-sand">
@@ -25,4 +25,3 @@ export default function Footer() {
     </footer>
   );
 }
-

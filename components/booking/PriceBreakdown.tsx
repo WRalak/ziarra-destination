@@ -1,3 +1,11 @@
-import {formatCurrency} from "@/lib/booking/pricing";
-export default function PriceBreakdown({currency,subtotal,serviceFee,pickupFee,total}:{currency:"KES"|"USD";subtotal:number;serviceFee:number;pickupFee:number;total:number}){return <dl className="space-y-3 text-sm"><div className="flex justify-between"><dt>Subtotal</dt><dd>{formatCurrency(subtotal,currency)}</dd></div><div className="flex justify-between"><dt>Development service fee</dt><dd>{formatCurrency(serviceFee,currency)}</dd></div>{pickupFee?<div className="flex justify-between"><dt>Demo pickup</dt><dd>{formatCurrency(pickupFee,currency)}</dd></div>:null}<div className="flex justify-between border-t border-line pt-3 text-lg font-semibold"><dt>Total</dt><dd aria-live="polite">{formatCurrency(total,currency)}</dd></div></dl>}
+import { formatCurrency } from "@/lib/booking/pricing";
 
+type Props = { currency: "KES" | "USD"; subtotal: number; serviceFee: number; pickupFee: number; total: number };
+
+function Row({ label, value, total = false }: { label: string; value: string; total?: boolean }) {
+  return <div className={`flex min-w-0 items-start justify-between gap-4 ${total ? "border-t border-line pt-3 text-base font-semibold sm:text-lg" : ""}`}><dt className="min-w-0">{label}</dt><dd className="shrink-0 text-right">{value}</dd></div>;
+}
+
+export default function PriceBreakdown({ currency, subtotal, serviceFee, pickupFee, total }: Props) {
+  return <dl className="space-y-3 text-sm"><Row label="Subtotal" value={formatCurrency(subtotal, currency)} /><Row label="Development service fee" value={formatCurrency(serviceFee, currency)} />{pickupFee ? <Row label="Demo pickup" value={formatCurrency(pickupFee, currency)} /> : null}<Row label="Total" value={formatCurrency(total, currency)} total /></dl>;
+}

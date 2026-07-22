@@ -26,7 +26,7 @@ export default function OfferingDetail({ offering }: { offering: Offering }) {
               <Link href={`/${categoryPaths[offering.category]}`}>{categoryNames[offering.category]}s</Link> / <span className="text-cream">{offering.title}</span>
             </nav>
             <p className="mt-6 font-mono text-xs uppercase tracking-[0.2em] text-gold">{label}</p>
-            <h1 className="mt-2 max-w-4xl font-display text-4xl font-semibold sm:text-5xl">{offering.title}</h1>
+            <h1 className="mt-2 max-w-4xl break-words font-display text-3xl font-semibold sm:text-5xl">{offering.title}</h1>
             <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-sand">
               <span>{offering.country}</span><span>★ {offering.rating} ({offering.reviewCount})</span><span>{offering.duration}</span>
             </div>
@@ -40,8 +40,8 @@ export default function OfferingDetail({ offering }: { offering: Offering }) {
 
         <div className="mx-auto grid max-w-7xl gap-10 px-4 pb-16 sm:px-6 lg:grid-cols-[minmax(0,1fr)_360px] lg:px-8">
           <div>
-            <nav className="sticky top-16 z-20 flex gap-7 overflow-x-auto border-b border-line bg-ink py-4 text-sm font-semibold" aria-label="Page sections">
-              <a href="#overview">Overview</a><a href="#itinerary">Itinerary</a><a href="#details">Details</a><a href="#reviews">Reviews</a>
+            <nav className="sticky top-16 z-20 flex gap-5 overflow-x-auto border-b border-line bg-ink py-4 text-sm font-semibold [scrollbar-width:none] sm:gap-7" aria-label="Page sections">
+              <a className="shrink-0" href="#overview">Overview</a><a className="shrink-0" href="#itinerary">Itinerary</a><a className="shrink-0" href="#details">Details</a><a className="shrink-0" href="#reviews">Reviews</a>
             </nav>
 
             <Section id="overview" title="Description"><p>{offering.shortDescription}</p></Section>
