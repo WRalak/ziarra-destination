@@ -1,9 +1,3 @@
 {
-  "/book/[category]/[slug]/page": "app/book/[category]/[slug]/page.js",
-  "/destinations/page": "app/destinations/page.js",
-  "/destinations/[country]/page": "app/destinations/[country]/page.js",
-  "/activities/[slug]/page": "app/activities/[slug]/page.js",
-  "/page": "app/page.js",
-  "/bookings/[reference]/page": "app/bookings/[reference]/page.js",
-  "/search/page": "app/search/page.js"
+  "/destinations/page": "app/destinations/page.js"
 }

@@ -1,4 +1,4 @@
-// File: C:\Users\walla\Downloads\ziarra-nextjs\app\destinations\page.tsx
+// File: C:\Users\walla\Downloads\ziarra-destination\app\destinations\page.tsx
 import * as entry from '../../../../app/destinations/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
