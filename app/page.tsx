@@ -31,7 +31,7 @@ export default function LandingPage() {
       <Header />
       <main>
         <section id="groups" className="relative isolate overflow-hidden border-b border-line">
-          <Image src="/images/destinations/uganda-hero.webp" alt="A community exploring a destination together" fill priority sizes="100vw" className="z-0 object-cover" />
+          <Image src="/images/destinations/kenya-hero.webp" alt="Travellers sharing a safari experience at sunset" fill priority sizes="100vw" className="z-0 object-cover object-center" />
           <div aria-hidden="true" className="absolute inset-0 z-10 bg-gradient-to-r from-ink via-ink/90 to-ink/45" />
           <div aria-hidden="true" className="absolute inset-0 z-10 bg-gradient-to-t from-ink via-transparent to-ink/40" />
           <div className="relative z-20 mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
