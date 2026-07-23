@@ -1,5 +1,8 @@
 {
-  "/destinations/page": "app/destinations/page.js",
+  "/page": "app/page.js",
+  "/accommodation/page": "app/accommodation/page.js",
+  "/events/page": "app/events/page.js",
   "/destinations/[country]/page": "app/destinations/[country]/page.js",
-  "/_not-found/page": "app/_not-found/page.js"
+  "/groups/page": "app/groups/page.js",
+  "/destinations/page": "app/destinations/page.js"
 }

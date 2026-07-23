@@ -3,10 +3,10 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Ziarra Destinations",
+    default: "Ziarra Community Travel",
     template: "%s | Ziarra"
   },
-  description: "Explore activities, day trips and travel packages across twelve African destinations."
+  description: "Discover communities, destinations, accommodation and events designed for shared travel experiences."
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
